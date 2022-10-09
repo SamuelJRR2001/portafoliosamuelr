@@ -40,6 +40,12 @@
   margin-bottom: -10px;
 }
 
+.social{
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: -5px;
+}
+
 @media screen and (min-width: 768px) {
   .hero {
     display: flex;
@@ -59,9 +65,36 @@
 
 }
 
+@media screen and (max-width: 458px) {
+  .hero-description {
+    order: 1;
+    max-inline-size: 450px;
+    text-align: center;
+  }
+
+  .hero-description h1{
+    color: var(--purple);
+    margin-top: -25px;
+    font-size: 35px;
+    margin-bottom: -10px;
+  }
+
+  .hero p{
+    color: white;
+    margin-top: -25px;
+    font-size: 22px;
+    margin-bottom: -10px;
+  }
+
+  .social{
+    margin: auto;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .hero-image img {
     inline-size: 500px;
     block-size: 504px;
   }
+  
 }
